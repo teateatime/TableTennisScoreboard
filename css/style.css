@@ -96,7 +96,7 @@ html, body {
     align-items: flex-end;
     grid-column: 1 / span 2;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
     margin-left: -65px;
 }
 
@@ -149,7 +149,7 @@ and (max-device-height : 699px){
 
 @media screen and (max-device-width : 500px) and (min-device-height : 700px) {
     .player1-items, .player2-items {
-        margin-bottom: 12vh;
+        margin-bottom: 11vh;
     }
 }
 
