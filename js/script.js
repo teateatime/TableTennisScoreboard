@@ -65,6 +65,10 @@ function updateService(operation) {
 
     let total_score = parseInt(player1_score.innerText) + parseInt(player2_score.innerText);
 
+    if ((total_score % 2 == 0) && (operation === "decrement") && (total_score == 0)) {
+        return;
+    }
+
     if (total_score == 0) {
         let rand = Math.floor(Math.random() * 2);
         if (rand == 0) {

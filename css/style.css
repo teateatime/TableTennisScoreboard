@@ -108,6 +108,7 @@ html, body {
 @media screen and (min-device-width : 1px) and (max-device-width : 500px) {
     .scoreboard-container {
         grid-template-columns: none;
+        font-size: 35px;
     }
     .player1-container, .player2-container {
         height: 50vh;
@@ -119,6 +120,9 @@ html, body {
     }
     .player1-items, .player2-items {
         margin-bottom: 3vh;
+    }
+    .score {
+        font-size: 70px;
     }
     #new-game-btn {
         display: block;
