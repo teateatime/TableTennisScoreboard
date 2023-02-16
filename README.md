@@ -1,1 +1,1 @@
-# super-duper-computing-machine
+# Table Tennis Scoreboard
