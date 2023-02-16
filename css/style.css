@@ -108,7 +108,7 @@ html, body {
 @media screen and (min-device-width : 1px) and (max-device-width : 500px) {
     .scoreboard-container {
         grid-template-columns: none;
-        font-size: 35px;
+        font-size: 30px;
     }
     .player1-container, .player2-container {
         height: 50vh;
@@ -119,10 +119,10 @@ html, body {
         width: 95vw;
     }
     .player1-items, .player2-items {
-        margin-bottom: 3vh;
+        margin-bottom: 5vh;
     }
     .score {
-        font-size: 70px;
+        font-size: 65px;
     }
     #new-game-btn {
         display: block;
@@ -131,14 +131,23 @@ html, body {
         left: 50%;
         bottom: auto;
         text-align: center;
-        margin-left: -45px;
+        margin-left: -40px;
         margin-top: -23px;
-        padding: 0;
+        font-size: 20px;
+        border: 3px solid white;
+        padding: 1px;
+    }
+}
+
+@media screen and (max-device-width : 500px) and (min-device-height : 600px)
+and (max-device-height : 699px){
+    .player1-items, .player2-items {
+        margin-bottom: 10vh;
     }
 }
 
 @media screen and (max-device-width : 500px) and (min-device-height : 700px) {
     .player1-items, .player2-items {
-        margin-bottom: 5vh;
+        margin-bottom: 12vh;
     }
 }
