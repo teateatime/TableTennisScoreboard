@@ -117,6 +117,7 @@ html, body {
     .player1-name, .player2-name {
         text-align: center;
         width: 95vw;
+        margin-top: 5px;
     }
     .player1-items, .player2-items {
         margin-bottom: 5vh;
@@ -142,12 +143,18 @@ html, body {
 @media screen and (max-device-width : 500px) and (min-device-height : 600px)
 and (max-device-height : 699px){
     .player1-items, .player2-items {
-        margin-bottom: 10vh;
+        margin-bottom: 8vh;
     }
 }
 
 @media screen and (max-device-width : 500px) and (min-device-height : 700px) {
     .player1-items, .player2-items {
         margin-bottom: 12vh;
+    }
+}
+
+@media screen and (min-device-width : 500px) and (max-device-width : 2500px) and (max-device-height : 600px) {
+    .player1-items, .player2-items {
+        margin-bottom: 16vh;
     }
 }
