@@ -4,11 +4,15 @@
     padding: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .scoreboard-container {
     height: 100vh;
     overflow: auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     font-family: 'MyWebFont';
     font-size: 50px;
 }
@@ -19,10 +23,12 @@
 }
 
 .player1-container {
+    width: 50vw;
     background-color: rgb(99, 175, 247);
 }
 
 .player2-container {
+    width: 50vw;
     background-color: rgb(247, 99, 99);
 }
 
@@ -33,6 +39,7 @@
 }
 
 .player1-name, .player2-name {
+    width: 49vw;
     font-weight: bold;
 }
 
@@ -76,20 +83,58 @@
 }
 
 #new-game-btn {
-    display: inline-block;
+    display: flex;
     position: absolute;
     left: 50vw;
     bottom: 0;
-    margin-left: -52.5px;
     color: white;
     border: 5px solid white;
     background-color: transparent;
     font-family: 'MyWebFont';
     font-size: 25px;
-    padding: 5px;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: -65px;
 }
 
 @font-face {
     font-family: 'MyWebFont';
     src: url('../font/PixgamerRegular-OVD6A.ttf');
+}
+
+@media screen and (min-device-width : 1px) and (max-device-width : 500px) {
+    .scoreboard-container {
+        grid-template-columns: none;
+    }
+    .player1-container, .player2-container {
+        height: 50vh;
+        width: 100vw;
+    }
+    .player1-name, .player2-name {
+        text-align: center;
+        width: 95vw;
+    }
+    .player1-items, .player2-items {
+        margin-bottom: 3vh;
+    }
+    #new-game-btn {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        bottom: auto;
+        text-align: center;
+        margin-left: -45px;
+        margin-top: -23px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-device-width : 500px) and (min-device-height : 700px) {
+    .player1-items, .player2-items {
+        margin-bottom: 5vh;
+    }
 }
