@@ -27,17 +27,21 @@ body {
 }
 
 .player1-container {
+    display: grid;
+    grid-template-rows: 33.33% 33.33% 33.33%;
     width: 50vw;
     background-color: rgb(99, 175, 247);
 }
 
 .player2-container {
+    display: grid;
+    grid-template-rows: 33.33% 33.33% 33.33%;
     width: 50vw;
     background-color: rgb(247, 99, 99);
 }
 
 .player1-items, .player2-items {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
     margin-bottom: 27vh;
 }
@@ -117,7 +121,7 @@ body {
 @media screen and (min-device-width : 1px) and (max-device-width : 500px) {
     .scoreboard-container {
         grid-template-columns: none;
-        font-size: 30px;
+        font-size: 3rem;
     }
     .player1-container, .player2-container {
         height: 50vh;
@@ -132,7 +136,7 @@ body {
         margin-bottom: 5vh;
     }
     .score {
-        font-size: 65px;
+        font-size: 6.5rem;
     }
     #new-game-btn {
         display: block;
