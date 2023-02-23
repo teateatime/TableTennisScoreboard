@@ -41,9 +41,13 @@ body {
 }
 
 .player1-items, .player2-items {
-    /* margin: 0 auto; */
     text-align: center;
     margin-bottom: 27vh;
+}
+
+.container {
+    text-align: center!important;
+    max-width: 100%!important;
 }
 
 .player1-name, .player2-name {
@@ -150,6 +154,12 @@ body {
         font-size: 20px;
         border: 3px solid white;
         padding: 1px;
+        /* position: absolute;
+        transform: translate(-50%,-50%);
+        top: 85%;
+        left: 50%;
+        font-size: 2.5rem;
+        text-decoration: none; */
     }
 }
 
@@ -163,6 +173,13 @@ and (max-device-height : 699px){
 @media screen and (max-device-width : 500px) and (min-device-height : 700px) {
     .player1-items, .player2-items {
         margin-bottom: 11vh;
+    }
+}
+
+@media screen and (min-device-width : 800px) and (max-device-width : 900px)
+and (min-device-height : 360px) and (max-device-height : 440px){
+    .player1-name, .player2-name {
+        width: 26vw;
     }
 }
 
