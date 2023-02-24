@@ -148,6 +148,7 @@ body {
         margin-top: 5px;
     }
     #name1, #name2 {
+        width: 77vw;
         margin-bottom: 15px;
     }
     .player1-items, .player2-items {
