@@ -131,6 +131,20 @@ body {
     src: url('../font/PixgamerRegular-OVD6A.ttf');
 }
 
+@media screen and (min-device-width: 428px) and (max-device-width: 926px) and (orientation: landscape) {
+    .scoreboard-container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      flex-direction: row;
+    }
+    .player1-container, .player2-container {
+      width: 50vw;
+      height: 100vh;
+    }
+}
+
+
 @media only screen and (min-device-width: 426px) {
     .player1-container, .player2-container {
         height: 100vh;
