@@ -51,13 +51,14 @@ body {
 }
 
 .player1-name, .player2-name {
-    width: 48vw;
+    width: 40vw;
     font-weight: bold;
+    font-size: 40px;
 }
 
-#player1-set {
+/* #player1-set {
     margin-left: -25px;
-}
+} */
 
 #name1, #name2 {
     margin-left: auto;
@@ -96,6 +97,7 @@ body {
 
 .turn-action {
     text-align: center;
+    font-size: 2.75rem;
 }
 
 .active {
@@ -111,7 +113,7 @@ body {
     font-size: 1.75rem;
     text-decoration: none;
     color: white;
-    border: 5px solid white;
+    border: 3px solid white;
     background-color: transparent;
     font-family: 'MyWebFont';
     /* font-size: 25px; */
@@ -121,7 +123,7 @@ body {
     margin: 0 auto;
     padding: 15px;
     margin-left: -65px; */
-    padding: 10px;
+    padding: 7px;
 }
 
 @font-face {
@@ -129,7 +131,7 @@ body {
     src: url('../font/PixgamerRegular-OVD6A.ttf');
 }
 
-@media only screen and (min-device-width: 501px) {
+@media only screen and (min-device-width: 426px) {
     .player1-container, .player2-container {
         height: 100vh;
         width: 50vw;
@@ -138,7 +140,7 @@ body {
     }
 }
 
-@media screen and (min-device-width : 1px) and (max-device-width : 500px) {
+@media screen and (min-device-width : 1px) and (max-device-width : 425px) {
     .scoreboard-container {
         grid-template-columns: none;
         font-size: 3rem;
@@ -147,6 +149,9 @@ body {
         height: 50vh;
         width: 100vw;
     }
+    #player2-name-container {
+        flex-direction: inherit!important;
+    }
     .player1-name, .player2-name {
         text-align: center;
         width: 95vw;
@@ -154,13 +159,13 @@ body {
     }
     #name1, #name2 {
         width: 77vw;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     .player1-items, .player2-items {
         margin-bottom: 5vh;
     }
     .score {
-        font-size: 6.5rem;
+        font-size: 6rem;
     }
     #new-game-btn {
         /* display: block;
