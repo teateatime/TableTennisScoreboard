@@ -55,6 +55,10 @@ body {
     font-weight: bold;
 }
 
+#player1-set {
+    margin-left: -25px;
+}
+
 #name1, #name2 {
     margin-left: auto;
     margin-right: auto;
@@ -96,6 +100,7 @@ body {
 
 .active {
     font-weight: 1000;
+    text-decoration: underline;
 }
 
 #new-game-btn {
@@ -193,7 +198,7 @@ and (max-device-height : 699px){
 @media screen and (min-device-width : 800px) and (max-device-width : 900px)
 and (min-device-height : 360px) and (max-device-height : 440px){
     .player1-name, .player2-name {
-        width: 26vw;
+        width: 27vw;
     }
 }
 
