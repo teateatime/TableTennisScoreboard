@@ -121,11 +121,11 @@ body {
     src: url('../font/PixgamerRegular-OVD6A.ttf');
 }
 
-/* @media only screen and (orientation: landscape) and (max-device-width: 844px) {
+@media only screen and (orientation: landscape) and (max-device-width: 844px) {
     .scoreboard-container {
       display: flex;
     }
-} */
+}
 
 @media only screen and (min-device-width: 428px) and (orientation: landscape) {
     .player1-container, .player2-container {
