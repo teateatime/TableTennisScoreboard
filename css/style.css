@@ -26,17 +26,17 @@ body {
     justify-content: space-around;
 }
 
-.player1-container {
+.player1-container, .player2-container {
     display: grid;
     grid-template-rows: 33.33% 33.33% 33.33%;
     width: 50vw;
+}
+
+.player1-container {
     background-color: rgb(99, 175, 247);
 }
 
 .player2-container {
-    display: grid;
-    grid-template-rows: 33.33% 33.33% 33.33%;
-    width: 50vw;
     background-color: rgb(247, 99, 99);
 }
 
@@ -55,22 +55,21 @@ body {
     font-weight: bold;
 }
 
-#name1 {
+#name1, #name2 {
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(99, 175, 247);
     border: none;
     padding: 10px;
     text-align: center;
+    margin-bottom: 15vh;
+}
+
+#name1 {
+    background-color: rgb(99, 175, 247);
 }
 
 #name2 {
-    margin-left: auto;
-    margin-right: auto;
     background-color: rgb(247, 99, 99);
-    border: none;
-    padding: 10px;
-    text-align: center;
 }
 
 #name1::placeholder, #name2::placeholder {
@@ -83,7 +82,7 @@ body {
 
 .score {
     display: inline;
-    font-size: 100px;
+    font-size: 120px;
     margin-top: -40px;
 }
 
@@ -100,26 +99,38 @@ body {
 }
 
 #new-game-btn {
-    display: flex;
     position: absolute;
-    left: 50vw;
-    bottom: 0;
+    transform: translate(-50%,-50%);
+    top: 85%;
+    left: 50%;
+    font-size: 1.75rem;
+    text-decoration: none;
     color: white;
     border: 5px solid white;
     background-color: transparent;
     font-family: 'MyWebFont';
-    font-size: 25px;
-    justify-content: center;
+    /* font-size: 25px; */
+    /* justify-content: center;
     align-items: flex-end;
     grid-column: 1 / span 2;
     margin: 0 auto;
     padding: 15px;
-    margin-left: -65px;
+    margin-left: -65px; */
+    padding: 10px;
 }
 
 @font-face {
     font-family: 'MyWebFont';
     src: url('../font/PixgamerRegular-OVD6A.ttf');
+}
+
+@media only screen and (min-device-width: 501px) {
+    .player1-container, .player2-container {
+        height: 100vh;
+        width: 50vw;
+        display: grid;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+    }
 }
 
 @media screen and (min-device-width : 1px) and (max-device-width : 500px) {
@@ -136,6 +147,9 @@ body {
         width: 95vw;
         margin-top: 5px;
     }
+    #name1, #name2 {
+        margin-bottom: 15px;
+    }
     .player1-items, .player2-items {
         margin-bottom: 5vh;
     }
@@ -143,7 +157,7 @@ body {
         font-size: 6.5rem;
     }
     #new-game-btn {
-        display: block;
+        /* display: block;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -153,13 +167,12 @@ body {
         margin-top: -23px;
         font-size: 20px;
         border: 3px solid white;
-        padding: 1px;
-        /* position: absolute;
-        transform: translate(-50%,-50%);
-        top: 85%;
+        padding: 1px; */
+        position: absolute;
+        top: 50%;
         left: 50%;
-        font-size: 2.5rem;
-        text-decoration: none; */
+        font-size: 1.25rem;
+        text-decoration: none;
     }
 }
 
